@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexa Website Creators</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter', sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#000;
+color:white;
+overflow-x:hidden;
+}
+
+/* Ultra Premium Mac Wallpaper Background */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),
+url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');
+background-size:cover;
+background-position:center;
+}
+
+/* Navbar */
+nav{
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+width:90%;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(20px);
+border-radius:20px;
+border:1px solid rgba(255,255,255,0.1);
+z-index:1000;
+}
+
+.logo{
+height:35px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+}
+
+section{
+padding:120px 8%;
+}
+
+.btn{
+padding:15px 30px;
+border-radius:30px;
+border:1px solid rgba(255,255,255,0.2);
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(20px);
+color:white;
+cursor:pointer;
+}
+
+/* Glass Cards */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+padding:30px;
+border-radius:20px;
+background:rgba(255,255,255,0.03);
+backdrop-filter:blur(25px);
+border:1px solid rgba(255,255,255,0.08);
+transition:0.4s;
+text-decoration:none;
+color:white;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* Reviews */
+.review{
+padding:30px;
+border-radius:20px;
+background:rgba(255,255,255,0.03);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,0.1);
+}
+
+footer{
+text-align:center;
+padding:50px;
+opacity:0.7;
+}
+
+.chat{
+position:fixed;
+bottom:30px;
+right:30px;
+background:rgba(255,255,255,0.1);
+padding:15px 20px;
+border-radius:50px;
+backdrop-filter:blur(20px);
+text-decoration:none;
+color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<img src="logo.png" class="logo">
+<div>
+<a href="#">Home</a>
+<a href="#projects">Projects</a>
+<a href="#about">About</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+<img src="logo.png" style="width:300px">
+<h2>Ultra Premium Websites For Businesses</h2>
+<p>Modern, Fast and Affordable Websites Built With Premium Design</p>
+<a href="#projects"><button class="btn">View My Work</button></a>
+</section>
+
+<section id="about">
+<h2>About Nexa Website Creators</h2>
+<p>
+Nexa Website Creators builds modern, fast, and affordable websites for businesses, cafes, startups, and personal brands. 
+We focus on premium design, smooth performance, and professional layouts that help businesses grow online.
+</p>
+
+<p>
+Our mission is simple — create beautiful websites at very affordable prices so every business can have a strong online presence. 
+We combine modern glass design, premium UI, and clean layouts to create websites that look professional and trustworthy.
+</p>
+</section>
+
+<section id="projects">
+<h2>My Projects</h2>
+<div class="grid">
+
+<a href="https://gopalpatel666.github.io/wovv-coffee-sainikpuri/" class="card">
+<h3>WOVV Coffee</h3>
+<p>Premium Cafe Website</p>
+</a>
+
+<a href="https://gopalpatel666.github.io/chai-kahani-sainikpuri/" class="card">
+<h3>Chai Kahani</h3>
+<p>Modern Cafe Website</p>
+</a>
+
+<a href="https://gopalpatel666.github.io/pound-to-inr/" class="card">
+<h3>Pound Converter</h3>
+<p>Currency Tool</p>
+</a>
+
+</div>
+</section>
+
+<section id="reviews">
+<h2>Client Reviews</h2>
+<div class="grid">
+
+<div class="review">
+<h3>WOVV Coffee</h3>
+<p>"Nexa created a very professional website for our cafe. The design looks modern and customers love it."</p>
+</div>
+
+<div class="review">
+<h3>Chai Kahani</h3>
+<p>"Affordable pricing and premium design. Nexa delivered exactly what we wanted."</p>
+</div>
+
+<div class="review">
+<h3>Local Business</h3>
+<p>"Fast delivery, modern layout, and smooth performance. Highly recommended."</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2>Create Your Website</h2>
+<p>Want a modern premium website for your business? Message us and get started today.</p>
+
+<input placeholder="Your Name">
+<input placeholder="Business Name">
+<textarea placeholder="Tell us about your website"></textarea>
+
+<a href="https://wa.me/919492752010">
+<button class="btn">Message on WhatsApp</button>
+</a>
+
+</section>
+
+<footer>
+© Nexa Website Creators | Premium Website Design
+</footer>
+
+<a href="https://wa.me/919492752010" class="chat">Chat</a>
+
+</body>
+</html>
